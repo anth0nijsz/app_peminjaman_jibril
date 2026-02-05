@@ -1,59 +1,38 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+PENJELASAN FITUR APLIKASI
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+2.1. Penjelasan Fitur Aplikasi
+Aplikasi Peminjaman Alat merupakan sistem informasi berbasis web yang digunakan untuk mengelola proses peminjaman dan pengembalian alat secara terkomputerisasi. Aplikasi ini bertujuan meningkatkan efisiensi, ketepatan data, serta transparansi pengelolaan alat dengan dukungan peran Admin, Petugas, dan Peminjam.
 
-## About Laravel
+2.2. Teori Pendukung
+2.2.1. Login
+Fitur login berfungsi sebagai sistem keamanan untuk membatasi akses pengguna sesuai dengan peran masing-masing. Pengguna wajib masuk menggunakan akun terdaftar untuk mengakses fitur aplikasi.
+2.2.2. Logout
+Fitur logout digunakan untuk mengakhiri sesi pengguna setelah selesai menggunakan aplikasi guna menjaga keamanan data.
+2.2.3. CRUD User
+Fitur CRUD User digunakan oleh Admin untuk mengelola data pengguna sistem, termasuk penambahan, perubahan, dan penghapusan akun.
+2.2.4. CRUD Alat
+Fitur CRUD Alat digunakan oleh Admin untuk mengelola data alat, seperti nama alat, kategori, stok, dan kondisi alat.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+2.2.5. CRUD Kategori
+Fitur CRUD Kategori digunakan oleh Admin untuk mengelompokkan alat berdasarkan jenis agar pengelolaan data lebih terstruktur.
+2.2.6. CRUD Data Peminjaman
+	Fitur ini digunakan oleh Admin untuk mengelola dan mendokumentasikan seluruh data transaksi peminjaman alat.
+2.2.7. CRUD Pengembalian
+Fitur ini digunakan oleh Admin untuk mencatat dan mengelola data pengembalian alat setelah masa peminjaman selesai
+2.2.8. Log Aktivitas
+Fitur Log Aktivitas digunakan oleh Admin untuk memantau dan mencatat seluruh aktivitas pengguna dalam sistem.
+2.2.9. Menyetujui Peminjaman
+		Fitur ini digunakan oleh Petugas untuk memverifikasi dan memproses pengajuan peminjaman alat dari Peminjam.
+2.2.10. Memantau Pengembalian
+Fitur ini digunakan oleh Petugas untuk mengawasi proses pengembalian alat serta keterlambatan yang terjadi.
+2.2.11. Mencetak Laporan
+Fitur Mencetak Laporan digunakan oleh Petugas untuk menghasilkan laporan data peminjaman dan pengembalian alat sebagai kebutuhan administrasi dan pelaporan.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+2.2.12. Melihat Daftar Alat
+Fitur Melihat Daftar Alat digunakan oleh Peminjam untuk mengetahui informasi alat yang tersedia, termasuk jenis, kondisi, dan ketersediaannya sebelum melakukan peminjaman.
+2.2.13. Mengajukan Peminjaman
+Fitur Mengajukan Peminjaman digunakan oleh Peminjam untuk mengajukan permohonan peminjaman alat melalui sistem sesuai dengan prosedur yang berlaku.
+2.2.14. Mengembalikan Alat
+Fitur Mengembalikan Alat digunakan oleh Peminjam untuk melaporkan pengembalian alat yang telah dipinjam agar tercatat dengan baik dalam sistem.
